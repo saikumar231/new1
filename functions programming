@@ -1,0 +1,86 @@
+Square of a number
+function square(a,b){
+    return a**b;
+}
+console.log(square(5,2));
+===========================================================
+Largest of three numbers
+function large(a,b,c){
+    if(a>b && b>c){
+        return a+"  a is a larger number";
+    }else if(c>a){
+        return c+"  c is a larger number";
+    }else {
+        return b+" b is a larger number";
+    }
+}
+console.log(large(11,1,0));
+============================================================
+function fibanaoci(n) {
+
+let a=0;
+let b = 1;
+let res =[]; // we need to store the result in the form of an array
+
+for(let i=0; i<n;i++){
+    res.push(a); // here push will add the element at last index of an array
+    let sum= a+b; //0+1 =1  ---> 0 1 1
+    a=b; // a=1  b=1  
+    b =sum; // 1+1 =2 ---->  0 1 1 2
+
+}
+    return res;
+}
+console.log(fibanaoci(5)); // 0 1 1 2 3 up to 5 elements it will give the result
+====================================================================================
+Factorial of a number
+function factorial(a){
+    if(a<0){
+        return "Input is a invalid." ;
+    }
+    let fact =1;
+    for (let i=1; i<=a;i++){
+        fact = fact*i; 
+    }
+    return fact;
+}
+console.log(factorial(20));
+==================================================================================
+==================================================================================
+<<<<<<<<<<<<<<......STRING FUNCTIONS.......>>>>>>>>>>>>>>>>>>>
+==================================================================================
+find vowels in a word
+let str= "aeiouancninmd";
+
+let vowels = "aeiou";
+
+let count =0;
+
+for(let i=0; i<=str.length;i++){
+    if(vowels.includes(str[i])){
+        count++;  
+    }
+    
+}
+console.log(count);
+=====================================================================================
+palindrome
+let str = "123321";
+let reverse = str.split(" ").reverse().join();
+if(str === reverse){
+ console.log(reverse +" is a palindrome.");
+}else{
+    console.log(reverse+ " is not a palindrome.");
+}
+=====================================================================================
+Removing extra sace in the sentence 
+let str= "    Welcome To my    world   ";
+console.log(str);
+console.log(str.trim()); //remove first and last extra spaces in a string
+let res= str.replace(/\s+/g, " ").trim(); // remove extra spaces in a string
+console.log(res);
+====================================================================================
+Whether the the character is present in the given word or not
+const str = "welcome";
+console.log(str.includes("l")); //true
+console.log(str.includes("E")); //false . because case-sensitive
