@@ -1,0 +1,128 @@
+string functions
+=====================================
+=====================================
+=====================================
+
+//Length of a string
+
+let str= "welcome";
+console.log(str);  //welcome
+console.log(str.length); //7
+
+//====================================================
+//uppercase
+console.log(str.toUpperCase()); //WELCOME
+
+//lowercase
+console.log(str.toLowerCase()); //welcome
+//======================================================
+//check whether a string contains a word
+let str1 = " welcome to my world";
+console.log(str1.includes('My')); //false
+console.log(str1.includes('world')); //true
+//================================================
+//Get first and last character of a string
+
+console.log(str.at(0)); //w
+console.log(str.at(-1)); //e
+//===========================================================
+// Reverse a string
+
+console.log(str.split("").reverse().join("")); //emoclew
+
+//String is a palindrome or not
+
+let pan = "wanaw";
+let rev = pan.split("").reverse().join("");
+if(pan === rev){
+    console.log("palindrome");
+}else{
+    console.log("not a palindorme");
+} 
+//=========================================================
+//Count vowels in a string
+
+let word1 = "vuaejshfawifoaz";
+let vowels ="aeiou";
+let count =0;
+for(let i=0;i<=word1.length-1;i++ ){
+    if(vowels.includes(word1[i])){
+        count++;
+    }
+}
+console.log(count); //7
+//======================================================================
+//Replace a word in a string
+console.log(str1.replace('my','the')); //welcome to the world
+
+//Remove spaces from a string
+console.log(str1.trim());
+//=======================================================================
+// Find longest word in a sentence
+// let str1 = " welcome to my world";
+
+let words = str1.split(" ");
+let longestWord = words[0];
+
+for(let i=1; i<words.length;i++){
+    if(words[i].length > longestWord.length){
+        longestWord = words[i];
+    }
+}
+console.log(longestWord); //welcome
+
+//=========================================================================
+
+//Capitalize first letter of each word
+let str2 = "honest thing";
+let cap = str2.split(" ");
+for (let i = 0; i < cap.length; i++) {
+  cap[i] = cap[i][0].toUpperCase() + cap[i].slice(1);
+}
+console.log(cap.join(" "));
+
+//==============================================
+
+//Count occurrences of a character
+// let str= "welcome";
+
+let character = 'e';
+let count1 =0;
+for( let i=0; i<=str.length;i++){
+    if(str[i] === character){
+        count1++;
+    }
+}
+console.log("COUNT1 IS "+count1);//e is 2times
+
+//===============================================
+
+console.log(str2.substring(1,4));  //one
+console.log(str2.slice(1,4));  //one
+
+//====================================================
+
+console.log(str.startsWith('w'));
+console.log(str.endsWith('e'));
+
+//============================================
+
+// Convert string to array of words
+
+console.log(str2.split(" "));
+
+//Join array of words into string
+console.log(str2.split(" ").join(" "));
+
+//================================================
+
+//repeat a string n times
+
+console.log(str2.repeat(4));
+//======================================
+
+//trim extra spaces from string
+
+let str3 = "     old is gold    ";
+console.log(str3);
+console.log(str3.trim());
