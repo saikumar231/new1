@@ -1,0 +1,141 @@
+HTML FILE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- <script src="destructuring.js"></script>--> 
+    <script src="destructure.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
+
+============================================================================================================
+
+JAVSCRIPT FILES
+
+let a = new Date();
+console.log(a);
+
+//let b= new Date("2026-01-07");
+let b= new Date(2026,3,5,2,30,20,22);
+//     new Date(year,month,date,hour,min,sec,millisec)
+console.log(b);
+
+const d = new Date(2018, 11, 24, 10, 33, 30, 0);
+console.log(d);
+
+//const c = new Date(-100000000000);
+const c = new Date(100000000000);
+console.log(c);
+
+//const e = new Date(24*60*60*1000);
+//console.log(e);
+const f = new Date(0);
+f.toDateString();
+//console.log(f);
+c.toString();
+
+const g=new Date("2026");
+console.log(g);
+
+let str = Date.parse("March 20, 2015");
+const str1 = new Date(str);
+console.log(str1);
+
+=============================================================================================================================
+GET METHODS
+
+let a = new Date( );
+
+console.log(a.getFullYear()); //2026
+
+console.log(a.getMonth()); //0 from jan to dec it will return the numbers from 0 to 11.
+
+console.log(a.getDate());  //7 todays date is returned.
+
+console.log(a.getHours()); // 16  the hour is returned here.
+
+console.log(a.getMinutes()); //14 minutes will be write here.
+
+console.log(a.getSeconds()); //50 seconds will be returned here.
+
+console.log(a.getMilliseconds()); //from 0 to 999 milliseconds will be counted.
+
+console.log(a.getDay());  // 0 to 6 days will be printed.
+
+let b = Date.now();
+console.log(b);
+
+===============================================================================================================================
+
+SET METHODS
+
+const a = new Date();
+a.setFullYear(2025,11,6);
+console.log(a);
+
+a.setDate(23);
+console.log(a);
+
+a.setMonth(2);
+console.log(a);
+
+a.setHours(12);
+console.log(a);
+
+a.setMinutes(12);
+console.log(a);
+
+a.setSeconds(12);
+console.log(a);
+
+a.setMilliseconds(12);
+console.log(a);
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Set time out function>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+function wish(){
+    console.log("Good Evening!!");
+}
+setTimeout(wish,2000);
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<clear time out function>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//clear time out function
+
+function write(){
+    console.log("congrats!!");
+}
+
+let a1 = setTimeout(write, 3000);
+
+function clear(){
+    clearTimeout(a1);
+}
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Set Interval function>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//set Interval
+
+function invite(){
+    console.log("Welcome");
+}
+
+//setInterval(invite,2000);
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Clear Interval function>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+/*function app(){
+    console.log("Install");
+}
+let b1 = setInterval(app,2);
+
+function cla(){
+    clearInterval(b1);
+}*/
+
