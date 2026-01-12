@@ -1,0 +1,162 @@
+let arr = [10,20,30,40];
+
+//let [a,b,c,d] =arr;
+
+/*console.log(a); //10
+console.log(b); //20
+console.log(c); //30
+console.log(d); //40 */
+
+let arr1 = [10,20,30,[40,50],[60,70]];
+
+//let [a,b,c,[d,e],[f,g]] =arr1
+
+//console.log(d); //40
+
+
+//let [a,b,c,d,e] =arr1;
+//console.log(e);
+
+let arr2 = [10,20,[30,40,[50]]]
+let [a,b,[c,d,[e]]] =arr2;
+console.log(e);
+
+let obj = {
+    name : 'sai',
+    age :23,
+    city :'ydk'
+}
+
+let {name, age,gender="male"} =obj;
+console.log(age);
+console.log(gender);
+
+
+//rest parameter
+
+/*function val(a,b,...c){
+    return c;
+}
+console.log(val(10,20,30,40,50));*/
+
+
+//spread parameter
+
+let arr3 = [60,20,30,40];
+
+function val(c,d){
+    return c+d;
+}
+console.log(val(...arr3));
+
+
+let c1 = [10,20,30];
+let c2 = [40,50,60];
+===========================================================================================================
+//Destructure the first two elements from an array.
+let arr =[1,2,3,4,5];
+let [a,b,c,d] =arr;
+console.log(a); //1
+console.log(b); //2
+
+//Extract name and age from a user object using object destructuring.
+
+let obj ={
+    name : 'sai',
+    age : 20,
+    gender :'male'
+}
+
+let {name, age, gender} =obj;
+console.log(name);
+console.log(age);
+
+//Destructure an array and skip the second element.
+
+let arr1 = [1,2,3,4,5];
+let [x, ,y]=arr1;
+console.log(x);
+console.log(y);
+
+//Use default values while destructuring an object.
+
+let obj1 = {
+    name1 :'sri',
+}
+let {name1, age1=20}=obj1;
+console.log(age1);
+
+//Destructure nested objects to extract inner values.
+
+let sai1 ={
+    adress : {
+        doorno : '6-89',
+        city : 'ATP'
+    },
+    name2 :'kumar'
+}
+
+let {adress :{doorno, city},name2} = sai1;
+
+console.log(doorno);
+console.log(city);
+console.log(name2);
+
+//Swap two variables using array destructuring.
+
+let a1 = [1,2,3,4];
+let b1 = [5,6,7,8];
+let temp =a1;
+a1 = b1;
+b1 = temp;
+
+console.log(a1);
+
+console.log(b1);
+
+//Destructure function parameters directly inside the function definition.
+
+function sk(name3,age3){
+    console.log(name3,age3);
+}
+sk("sai",20);
+
+//Extract values from an array of objects using destructuring
+
+let arrobj = [{marks : 25,
+               grade :'A'
+              },
+              {
+                sub : 'maths',
+                clas : '10th'
+              }];
+
+let [{marks,grade},{sub,clas}]   = arrobj;           
+
+console.log(marks, grade);
+
+console.log(sub, clas);
+
+
+//Combine destructuring with rest operator to separate remaining values.
+
+let sai2 = [10,20,30,40,50];
+
+let [x1,y1,...z] =sai2
+console.log(x1);
+console.log(y1);
+console.log(z);
+
+//Rename object properties while destructuring.
+
+let sai3 ={
+    book :'read',
+    store : 'grocery'
+};
+
+let {book : library, store:shop} = sai3;
+
+console.log(library);
+console.log(shop);
+
+console.log(...c1,...c2);
