@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+
+    <h1 id="sri" >Welcome to My World</h1> 
+    <p class = "box">Something is happened let it be happen</p> 
+    <h1 id="sri">Pen is Mighter than sword</h1>
+    <h2>Knowledge is divine</h2>
+
+
+
+
+
+<!-- <script src="destructuring.js"></script>--> 
+     <script src="dom.js"></script>
+</body>
+</html>
+
+===================================================================================================================
+
+/*BOM - Browser object model
+1. window
+2.Navigator
+3.document{DOM- Document object model}
+4.location
+5.screen
+*/
+
+//1.window
+console.log(window);
+//2.document
+console.log(document); 
+//3.Navigator
+console.log(window.navigator);
+console.log(window.navigator.appName);
+console.log(window.navigator.appCodeName);
+console.log(window.navigator.geolocation);
+//screen
+console.log(window.screen);
+console.log(window.screen.availHeight);
+console.log(window.screen.availWidth);
+console.log(window.screen.width);
+console.log(window.screen.height);
+
+//Location
+console.log(window.location);
+console.log(window.location.href);
+console.log(window.location.host);
+console.log(window.location.protocol);
+
+//POP-UP BOXES
+//1.alert box
+//console.log(window.alert("Hi, Good Morning"));
+
+//2.confirm box
+//console.log(window.confirm("Is it good time to connect with you"));  // after showing alert message when you click "ok" in the console page it displays the "true" value.
+// If we click "cancel" button it will return the "false" value in the console page.
+
+//3.prompt box
+//console.log(window.prompt("Enter a number ")); // whate ever entered number will displayed on the console page.
+// if we didnot enter any value click on the "cancel" button it will returns "null" in the console page.
+// if we clicl on "ok" button it will print empty value in the console page.
