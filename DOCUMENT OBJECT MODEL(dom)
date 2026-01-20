@@ -1,0 +1,73 @@
+//Dom - Document object model
+
+//1.GetElementyId
+//console.log(document);
+
+/*let element = document.getElementById("sri");
+
+element.style.backgroundColor = "green";
+element.style.color = "red";
+
+console.log(element);
+
+
+//2.GetElementsByClassName
+
+let a = document.getElementsByClassName("box");
+
+a[0].style.backgroundColor = "blueviolet";
+a[0].style.color="red";
+
+console.log(a);
+
+//3.GetElementByTagName
+
+let b = document.getElementsByTagName("h1");
+
+b[1].style.backgroundColor ="orange";
+b[1].style.color = "white";
+
+
+let c = document.getElementsByTagName("h2");
+c[0].style.backgroundColor = "aqua";
+c[0].style.color = "black";
+console.log(b);
+console.log(c);
+
+//4.Query Selector
+
+//pass either .classname, #idname, tagname
+
+let d = document.querySelector("#sri"); //#idname
+d.style.color = "yellow";
+d.style.backgroundColor = "Black";
+console.log(d);
+
+let e = document.querySelector(".box"); //.classname
+e.style.color = "white";
+e.style.backgroundColor = "black";
+console.log(e);
+
+let f = document.querySelector("h2"); //tagname
+f.style.color = "red";
+f.style.backgroundColor = "aqua";
+console.log(f); 
+
+//when double time tagname is repeated for the first tag only alll the properties will be applied
+
+let g = document.querySelectorAll("#sri");
+g[0].style.color = "purple";
+g[1].style.backgroundColor = "purple";
+
+console.log(g);
+
+let h = document.querySelectorAll(".box");
+h[0].style.color = "green";
+
+console.log(h);
+
+let i = document.querySelectorAll("h2");
+i[0].style.backgroundColor = "orange";
+console.log(i);
+
+*/
