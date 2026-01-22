@@ -1,0 +1,21 @@
+//?pending  -----------> finally()
+//?fulfilled or resolved ----------->then()
+//?rejected --------------->catch()
+//12/01/2026
+let res = prompt("Respnose.......");
+let a = new Promise(
+    function(resolved, rejected){
+        if(res == "yes"){
+            resolved("enjoy....😊");
+        }else{
+            rejected("Dont worry...👍");
+        }
+});
+
+a.then (val =>{
+    console.log(val);
+}).catch(val =>{
+    console.log(val);
+}).finally(val =>[
+    console.log("Be Happy...😂")
+]);
