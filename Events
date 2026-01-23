@@ -1,0 +1,68 @@
+//20/01/2026
+//Events
+
+//1.Onclick event(onclick)
+function show(){
+    console.log("I am a OnClick Event...."); // if we click on the button it will display this output.
+}
+
+//2.onDoubleClick Event(ondblclick)
+function greet(){
+    console.log("Welcome to my Home...🙏"); // if we double-click on the button simultaneously it will display this output
+}
+
+//3.On Mouse Enter event (onmouseenter)
+function hover(){
+    console.log("Mouse hover on the button"); // when we hover with cursor on the button it will print the output. when we hover on many times on the button it will make on going output will get to us.
+}
+
+//4.OnMouse Down Event(onmousedown)
+function down(){
+    console.log("clck the element button"); //click the element button
+}
+
+//5.Onkey Down(onkeydown)
+function onkeydownn(){
+    console.log("Onkey down event...."); // when write anything inside the input box it will display the output.
+}
+
+//6.Onkey Up(onkeyup)
+function onkeyupp(){
+    console.log("On key Up Event...."); // function is released from the trigger.
+} 
+
+//7.On Submit Event(onsubmit)
+function onsubmitt(){
+    alert("Successfully submitted...!"); // when click on the submit button it will show alert message.
+}
+
+
+
+
+//?stringify ----> convert normal object into JSON object
+//?parse     ----> convert JSON object into normal object
+
+//****** Normal Object to JSON object
+let objjson = {
+    name : 'sri',
+    age : 20
+};
+let b = JSON.stringify(objjson); //Object → JSON
+console.log(b); // normal to json
+
+let c = JSON.parse(b);
+console.log(c);  // json to normal object
+
+
+
+
+//******JSON TO Normal object conversion
+
+let jsonData = '{"name":"Sai","age":22}';
+
+let obj3 = JSON.parse(jsonData); //JSON → Object
+
+console.log(obj3);
+console.log(obj3.name); // Sai
+
+
