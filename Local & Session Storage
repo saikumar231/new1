@@ -1,0 +1,30 @@
+//21/01/2026 -last day topic
+//Local Storage ==> When browser is closed - data will be their.
+// it will store up to 5mb to 10mb 
+
+
+localStorage.setItem("name","sai");
+localStorage.setItem("age",20);
+console.log(localStorage.getItem("name"));
+console.log(localStorage.getItem("age"));
+
+localStorage.removeItem("name"); //one specific item is removed and it will give null output when we get the element.
+console.log(localStorage.getItem("name"));
+
+localStorage.clear(); // it will clear all the things and get the null element.
+console.log(localStorage.getItem("age"));
+
+
+//**** Session Storage *****
+//when browser is closed all the data is cleared/deleted.
+// it will store upto 4kb
+
+sessionStorage.setItem("book","Predictions of sai...");
+sessionStorage.setItem("author","owl");
+console.log(sessionStorage.getItem("book"));
+
+sessionStorage.removeItem("author");
+console.log(sessionStorage.getItem("author")); //one specific item is removed and it will give null output when we get the element.
+
+sessionStorage.clear();
+console.log(sessionStorage.getItem("book")); // it will clear all the things and get the null element.
