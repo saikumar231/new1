@@ -1,0 +1,18 @@
+function maskEmail(email){
+  let atIndex = email.indexOf("@");
+  let username = email.slice(0,atIndex);
+  let domain = email.slice(atIndex);
+
+  let maskedUserName = username[0]+"*".repeat(username.length-2)+username[username.length-1];
+
+  return maskedUserName+domain;
+}
+let email = "apple.pie@example.com";
+console.log(maskEmail(email));
+
+let fahrenheit;
+function convertCtoF( celsius ){
+  fahrenheit = celsius * (9/5) + 32;
+  return fahrenheit;
+}
+console.log(convertCtoF(-30));
