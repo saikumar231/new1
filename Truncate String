@@ -1,0 +1,16 @@
+let str = "adgdgfhg";
+let num = 2;
+
+function truncateString(str,num){
+  if(str.length>num){
+    return str.slice(0,num)+"..."
+  }else{
+    return str;
+  }
+}
+let res = truncateString(str,num);
+console.log("truncateString "+res);
+
+function confirmEnding(str,num){
+  return str.substring(str.length-num.length) === num;
+}
